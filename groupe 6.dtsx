@@ -1,0 +1,897 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/17/2025 6:14:28 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SWITHAN"
+  DTS:CreatorName="SWITHAN\natha"
+  DTS:DTSID="{7CCBAFFB-D516-4491-B00C-2254EFBB4F5B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="2060"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{7EEB9AD8-C024-4FC5-BCCC-18114B4D1DD6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Groupe 6 csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D5F3CD39-EDF4-4C1D-8621-1EFB4DDDCC67}"
+      DTS:ObjectName="Groupe 6 csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2060"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\natha\Downloads\RE_ Groupe Datawareahouse &amp; ETL\Groupe 6.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Order ID"
+              DTS:DTSID="{F2422D0D-2389-4D9B-825D-7857BB0B889C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Customer Name"
+              DTS:DTSID="{70AC7F3A-BC78-454E-8862-A40CC3B21208}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Gender"
+              DTS:DTSID="{2E0CB946-82D0-4C82-AF9D-B8F1C45810B8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Birthdate"
+              DTS:DTSID="{A0572FC4-088F-4E4A-B02F-1B5AF79D5C3C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category"
+              DTS:DTSID="{1A32A1B5-CE78-40CA-ADDE-5CA49CC57CEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sub Category"
+              DTS:DTSID="{206DC75C-1057-46E5-93E8-D8394CDF8D4C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{07F2E4D8-B2DE-4E4A-AE2F-F57083545425}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Order Date"
+              DTS:DTSID="{D61B8C38-3820-4957-837B-C19AE9B0BE57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{0FBC98AC-0847-48A1-8682-09536B514517}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sales"
+              DTS:DTSID="{387F0D89-6072-4AAE-838C-719FCB2B5ED3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discount"
+              DTS:DTSID="{93FFAFD1-A222-490E-AF66-549C5C0F43DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Profit"
+              DTS:DTSID="{1AF89565-E9B7-4F2E-AAA3-D4598E5C545A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{1F7BB15F-DAB5-416B-BD57-88CC165E19B2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Swithan\MSSQLSERVER01.Datawarehouse]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CCFDA6DB-EB63-4854-81B8-856EC52387CD}"
+      DTS:ObjectName="Swithan\MSSQLSERVER01.Datawarehouse">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=Swithan\MSSQLSERVER01;Initial Catalog=Datawarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{CCFDA6DB-EB63-4854-81B8-856EC52387CD}Swithan\MSSQLSERVER01.Datawarehouse;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Table Customer"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{D3D5E619-05D4-4AA8-8D9C-4F88DD04F68F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Table Customer"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Table Customer\Destination OLE DB"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+              description="Destination OLE DB"
+              name="Destination OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[dbo].[Dim_Customer]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Table Customer\Destination OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Swithan\MSSQLSERVER01.Datawarehouse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Swithan\MSSQLSERVER01.Datawarehouse]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[gender]"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Birthdate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Birthdate"
+                      externalMetadataColumnId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[birthdate]"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthdate]" />
+                    <inputColumn
+                      refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].Columns[Customer Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Customer Name"
+                      externalMetadataColumnId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[name]"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Customer Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[customer_id]"
+                      dataType="i4"
+                      name="customer_id" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB].ExternalColumns[birthdate]"
+                      dataType="dbDate"
+                      name="birthdate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Table Customer\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination OLE DB"
+                  synchronousInputId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Table Customer\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Table Customer\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Table Customer\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Table Customer\Destination OLE DB.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Table Customer\Source du fichier plat"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Source du fichier plat;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;1"
+              description="Source du fichier plat"
+              localeId="2060"
+              name="Source du fichier plat"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Spécifie si les colonnes dont la longueur est zéro sont traitées comme des valeurs NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom d'une colonne de sortie contenant le nom du fichier. Si aucun nom n'est spécifié, aucune colonne de sortie contenant le nom du fichier ne sera générée."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Table Customer\Source du fichier plat.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Groupe 6 csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[Groupe 6 csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat]"
+                  name="Sortie de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Order ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Order ID]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Order ID]"
+                      name="Order ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Customer Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Customer Name]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Customer Name]"
+                      name="Customer Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Gender]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthdate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Birthdate]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Birthdate]"
+                      name="Birthdate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Category]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Category]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Category]"
+                      name="Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Sub Category]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Sub Category]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Sub Category]"
+                      name="Sub Category"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[City]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Order Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Order Date]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Order Date]"
+                      name="Order Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Region]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Region]"
+                      name="Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Sales]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Sales]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Sales]"
+                      name="Sales"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Discount]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Discount]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Discount]"
+                      name="Discount"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Profit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Profit]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[Profit]"
+                      name="Profit"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[State]"
+                      length="50"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si la colonne utilise les routines d'analyse les plus rapides, avec des paramètres régionaux neutres."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indique si les données sont au format binaire."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Order ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Order ID" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Customer Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Customer Name" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Birthdate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Birthdate" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Category]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Category" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Sub Category]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sub Category" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Order Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Order Date" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Sales]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Discount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Discount" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[Profit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Profit" />
+                    <externalMetadataColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source de fichier plat">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Colonne de sortie d'erreur de source de fichier plat"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[Colonne de sortie d'erreur de source de fichier plat]"
+                      name="Colonne de sortie d'erreur de source de fichier plat" />
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Table Customer\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Table Customer\Source du fichier plat.Outputs[Sortie d'erreur de source de fichier plat].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Table Customer.Paths[Sortie de source de fichier plat]"
+              endId="Package\Table Customer\Destination OLE DB.Inputs[Entrée de destination OLE DB]"
+              name="Sortie de source de fichier plat"
+              startId="Package\Table Customer\Source du fichier plat.Outputs[Sortie de source de fichier plat]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tâche d'exécution de requêtes SQL"
+      DTS:DTSID="{fddaa5ab-fce1-4f96-ace6-d0335e4c6e67}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{CCFDA6DB-EB63-4854-81B8-856EC52387CD}"
+          SQLTask:SqlStatementSource="ALTER TABLE dbo.Fact_Order DROP CONSTRAINT FK_FactOrder_Customer;&#xA;ALTER TABLE dbo.Fact_Order DROP CONSTRAINT FK_FactOrder_Product;&#xA;ALTER TABLE dbo.Fact_Order DROP CONSTRAINT FK_FactOrder_Destination;&#xA;&#xA;TRUNCATE TABLE dbo.Fact_Order;&#xA;TRUNCATE TABLE dbo.Dim_Customer;&#xA;TRUNCATE TABLE dbo.Dim_Product;&#xA;TRUNCATE TABLE dbo.Dim_Destination;&#xA;&#xA;ALTER TABLE dbo.Fact_Order &#xA;    ADD CONSTRAINT FK_FactOrder_Customer &#xA;    FOREIGN KEY (customer_id) REFERENCES dbo.Dim_Customer(customer_id);&#xA;&#xA;ALTER TABLE dbo.Fact_Order &#xA;    ADD CONSTRAINT FK_FactOrder_Product &#xA;    FOREIGN KEY (product_id) REFERENCES dbo.Dim_Product(product_id);&#xA;&#xA;ALTER TABLE dbo.Fact_Order &#xA;    ADD CONSTRAINT FK_FactOrder_Destination &#xA;    FOREIGN KEY (destination_id) REFERENCES dbo.Dim_Destination(destination_id);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Contrainte]"
+      DTS:CreationName=""
+      DTS:DTSID="{C2F91DB1-8F98-4EA3-B9B0-3D654899C128}"
+      DTS:From="Package\Truncate tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Contrainte"
+      DTS:To="Package\Table Customer" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="8">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Table Customer"
+          TopLeft="107,126" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Truncate tables"
+          TopLeft="113,29" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Contrainte]"
+          TopLeft="188,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Table Customer">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Table Customer\Source du fichier plat"
+          TopLeft="185,22" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Table Customer\Destination OLE DB"
+          TopLeft="184,254" />
+        <EdgeLayout
+          Id="Package\Table Customer.Paths[Sortie de source de fichier plat]"
+          TopLeft="274.25,64">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,190"
+              Start="0,0"
+              End="0,182.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,182.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Table Customer\Destination OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
